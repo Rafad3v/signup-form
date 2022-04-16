@@ -6,7 +6,49 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+html, body {
+  height: 100vh;
+}
 body {
   font-size: 62.5%;
-
+  background-color: #FF7A7A;
+  background-image: url(./assets/img/bg-intro-mobile.png);
+}
+.container {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100vh;
+}
+.text-area h1 {
+  color: #fffbfb;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0rem 1rem;
+}
+.text-area p {
+  color: #fff2e8;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.form-area {
+  margin-top: 3.5rem;
+}
+.try-it {
+  background-color: #5d54a3;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 6px rgb(62, 60, 73, 0.4);
+}
+.try-it span {
+  color: #fff;
+  font-weight: 600;
+}
+.try-it p {
+  color: #fbf4ff;
+  font-size: 0.9rem;
+  text-align: center;
 }

@@ -5,6 +5,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 html, body {
   height: 100vh;
@@ -13,14 +14,16 @@ body {
   font-size: 62.5%;
   background-color: #FF7A7A;
   background-image: url(./assets/img/bg-intro-mobile.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
-  height: 100vh;
+  max-width: 1440px;
 }
 .text-area h1 {
   color: #fffbfb;
@@ -41,7 +44,7 @@ body {
   background-color: #5d54a3;
   padding: 1rem 3rem;
   border-radius: 0.5rem;
-  box-shadow: 0px 6px rgb(62, 60, 73, 0.4);
+  box-shadow: 0px 7px rgb(62, 60, 73, 0.3);
 }
 .try-it span {
   color: #fff;
@@ -51,4 +54,70 @@ body {
   color: #fbf4ff;
   font-size: 0.9rem;
   text-align: center;
+}
+.claim-form {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.3rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.claim-form input {
+  width: 100%;
+  padding: 0.9rem 0rem 0.9rem 1rem;
+  border: 2px solid #ebebeb;
+  border-radius: 0.3rem;
+}
+.claim-form input::placeholder {
+  color: #555557;
+  font-weight: 600;
+}
+.claim-form input[type=submit] {
+  background-color: #37cc8a;
+  color: #fff;
+  padding: 1rem 0rem 0.7rem 0rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  box-shadow: 0px 4px rgb(47, 186, 127);
+  cursor: pointer;
+}
+.claim-form input[type=submit]:hover {
+  background-color: #77e2b4;
+  transition: 0.5s;
+}
+.claim-form p {
+  color: #afaeb4;
+  text-align: center;
+}
+.claim-form p a {
+  color:#FF7A7A;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+  }
+  .text-area h1 {
+    font-size: 2.7rem;
+    padding: 0rem 7rem;
+  }
+  .text-area p {
+    font-size: 1.2rem;
+    padding: 0rem 6rem;
+  }
 }

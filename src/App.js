@@ -1,6 +1,25 @@
 import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 function App() {
+  const [userName, setUserName] = React.useState("");
+  const [nameError, setNameError] = React.useState(null);
+
+  function validateName() {
+    if (userName.length === 0) {
+      setNameError('First Name cannot be empty');
+    } else {
+      setNameError(null);
+    }
+  }
+
+  function handleChange(event) {
+    event.preventDefault();
+    validateName();
+    console.log(userName.length);
+  }
+
   return (
     <div className="App">
       <main className="container">
@@ -13,11 +32,12 @@ function App() {
             <p><span>Try it free 7 days </span>then $20/mo. thereafter</p>
           </div>
           <form className="claim-form">
-              <input type="text" placeholder="First Name"></input>
+              <input type="text" onChange={({target}) => setUserName(target.value)} placeholder="First Name"></input>
+              {nameError ? <p>{nameError}</p> : ""}
               <input type="text" placeholder="Last Name"></input>
               <input type="email" placeholder="Email Address"></input>
               <input type="password" placeholder="Password"></input>
-              <input type="submit" value="CLAIM YOUR FREE TRIAL"></input>
+              <input type="submit" onClick={handleChange} value="CLAIM YOUR FREE TRIAL"></input>
               <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
           </form>
         </section>

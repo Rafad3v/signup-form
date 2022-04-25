@@ -27,13 +27,13 @@ body {
 }
 .text-area h1 {
   color: #fffbfb;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 0rem 1rem;
 }
 .text-area p {
   color: #fff2e8;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 1.5rem;
 }
@@ -42,7 +42,7 @@ body {
 }
 .try-it {
   background-color: #5d54a3;
-  padding: 1.2rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 0.5rem;
   box-shadow: 0px 7px rgb(62, 60, 73, 0.3);
 }
@@ -52,29 +52,25 @@ body {
 }
 .try-it p {
   color: #fbf4ff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 .claim-form {
   background-color: #fff;
   border-radius: 0.5rem;
-  padding: 1rem 1.3rem;
+  padding: 1.5rem 1.3rem;
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.2rem;
   box-shadow: 0px 7px rgb(62, 60, 73, 0.3);
 }
 .claim-form input {
   width: 100%;
-  padding: 0.7rem 0rem 0.7rem 1rem;
+  padding: 0.9rem 0rem 0.9rem 1rem;
   border: 2px solid #ebebeb;
   border-radius: 0.3rem;
-  margin-top: 1rem;
-  outline-color: #605b79;
-  color: #2b2a30;
-  font-weight: 550;
-  caret-color: #605b79;
 }
 .claim-form input::placeholder {
   color: #555557;
@@ -83,7 +79,7 @@ body {
 .claim-form input[type=submit] {
   background-color: #37cc8a;
   color: #fff;
-  padding: 0.8rem 0rem 0.5rem 0rem;
+  padding: 1rem 0rem 0.7rem 0rem;
   border-radius: 0.5rem;
   border: none;
   font-weight: 500;
@@ -95,39 +91,15 @@ body {
   background-color: #77e2b4;
   transition: 0.5s;
 }
-.terms-advice {
-  margin-top: 1.2rem;
-}
-.terms-advice p {
+.claim-form p {
   color: #afaeb4;
   text-align: center;
-  font-size: 0.7rem;
 }
-.terms-advice p a {
+.claim-form p a {
   color:#FF7A7A;
   font-weight: 600;
 }
-.claim-form > p {
-  color: #fd7977;
-  width: 100%;
-  text-align: right;
-  margin-top: 5px;
-  font-size: 0.7rem;
-  font-weight: 500;
-}
-.claim-form > .error {
-  border: 2px solid #ff7b7c;
-  background: url(../src/assets/img/icon-error.svg) no-repeat;
-  background-position: 95% center;
-}
-.claim-form > .email-error {
-  border: 2px solid #ff7b7c;
-  background: url(../src/assets/img/icon-error.svg) no-repeat;
-  background-position: 95% center;
-}
-.claim-form > .email-error::placeholder {
-  color: #ff7b7c;
-}
+
 
 @media (min-width: 500px) {
   .text-area h1 {
